@@ -16,6 +16,9 @@ def say(string):
 
 
 def take_command():
+    print("Checking to see if the microphone is null....")
+    if not sr.Microphone():
+        print("The Microphone cannot be accessed.")
     try:
         with sr.Microphone() as source:
             print("listening...")
