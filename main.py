@@ -28,7 +28,7 @@ def take_command():
         pass
 
 
-def run_alexa():
+def run():
     command = take_command()
     if command is not None:
         print("DEBUG: " + command)
@@ -55,4 +55,4 @@ def run_alexa():
 
 
 while True:
-    run_alexa()
+    run()
