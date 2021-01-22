@@ -28,7 +28,7 @@ def take_command():
         pass
 
 
-def run():
+def assistant_run():
     command = take_command()
     if command is not None:
         print("DEBUG: " + command)
@@ -55,4 +55,4 @@ def run():
 
 
 while True:
-    run()
+    assistant_run()
